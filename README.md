@@ -8,7 +8,14 @@ Cutter? Maybe. But I've dug just about a deep as one can allowing immense custom
 
 # Git Clone
 
-This repo. Then npm install && npm start (be sure to have nodemon installed via npm ;)
+This repo. Then
+
+```
+npm install && npm start
+```
+
+# Don't forget to bring a towel
+(be sure to have nodemon installed via npm ;)
 
 # Thanks
 
