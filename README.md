@@ -14,9 +14,9 @@ This repo. Then
 npm install && npm start
 ```
 
-# Don't forget to bring a towel
-(be sure to have nodemon installed via npm ;)
+# Don't forget
+(be sure to have nodemon installed via npm for rapid editing/testing)
 
 # Thanks
 
-David Acosta. You're a gem.
+David Acosta
