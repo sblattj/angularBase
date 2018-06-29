@@ -15,7 +15,7 @@ npm install && npm start
 ```
 
 # Don't forget
-(be sure to have nodemon installed via npm for rapid editing/testing)
+Be sure to have nodemon installed via npm for rapid editing/testing
 
 # Thanks
 
