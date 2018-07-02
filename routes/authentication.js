@@ -129,5 +129,28 @@ module.exports = (router) => {
         }
     });
 
+    router.post('/login', (req, res) => {
+        if (!req.body.username || !req.body.password) {
+            res.json({ success: false, message: 'Username or Password Invalid' })
+        } else {
+            User.findOne({ username: req.body.username.toLowerCase() }, (err, user) => {
+                if (err) {
+                    res.json({ success: false, message: err });
+                } else {
+                    if (!user) {
+                        res.json({ success: false, message: 'Username not found' });
+                    } else {
+                        const validPassword = user.comparePassword(req.body.password);
+                        if (!validPassword || validPassword == '' || validPassword == null) {
+                            res.json({ success: false, message: 'Password invalid' });
+                        } else {
+                            res.json({ success: true, message: 'Logging in...'});
+                        }
+                    }
+                }
+            });
+        }
+    });
+
     return router; // Return router object to main index.js
 }
