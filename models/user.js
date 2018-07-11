@@ -53,8 +53,7 @@ let validUsername = (username) => {
     if (!username) {
         return false;
     } else {
-        //const regExp = new RegExp(/^[a-zA-Z0-9]+$/);
-        const regExp = new RegExp(/^(\+\d{1,2}\d{10}\s)?\(?\d{3}[-.)*]\s?\d{3}[-.]\d{4}$/);
+        const regExp = new RegExp(/^[a-zA-Z0-9]+$/);
         return regExp.test(username);
     }
 };
