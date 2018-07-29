@@ -6,8 +6,13 @@ This template can serve as a basis for any website you want to create.
 
 ## Git Clone
 
-This repo. Then
+This repo. Then in the root directory of angularBase
 
+```
+npm install
+```
+
+Then, in the client directory
 ```
 npm install
 ```
