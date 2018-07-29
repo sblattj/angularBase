@@ -35,13 +35,10 @@ export class AuthService {
   }
 
   registerUser(user) {
-    return this.http.post(this.domain + '/authentication/register', user)
-    .pipe(
-      map(res => res.json())
-    );
+    return this.http.post(this.domain + '/authentication/register', user).pipe(map(res => res.json()));
   }
 
-  // Function to check if e-mail is taken
+  // Function to check if username is taken
   checkUsername(username) {
     return this.http.get(this.domain + '/authentication/checkUsername/' + username).pipe(map(res => res.json()));
   }
@@ -70,13 +67,13 @@ export class AuthService {
   loggedIn() {
     if (this.authToken == null || this.authToken == undefined) {
       return false;
+    } else {
+      return true;
     }
-    return true;
   }
 
 
   logout() {
-    alert('here');
     this.authToken = null;
     this.user = null;
     localStorage.clear();
