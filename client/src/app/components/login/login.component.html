@@ -1,5 +1,12 @@
 <h2 class="page-header">Login</h2>
 
+<!-- Custom Success/Error Message -->
+<div class="row show-hide-message">
+  <div [ngClass]="messageClass">
+    {{ message }}
+  </div>
+</div>
+
 <!-- Login Form -->
 <form [formGroup]="form" (submit)="onLoginSubmit()">
 
@@ -28,12 +35,4 @@
   </div>
   <!-- Submit Button -->
   <input [disabled]="!form.valid || processing" class="btn btn-primary" type="submit" value="Login" />
-
-<!-- Custom Success/Error Message -->
-<div class="row show-hide-message">
-  <div [ngClass]="messageClass">
-    {{ message }}
-  </div>
-</div>
-
 </form>

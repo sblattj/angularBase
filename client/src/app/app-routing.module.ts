@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 // Our Array of Angular 2 Routes
 const appRoutes: Routes = [
@@ -22,6 +23,10 @@ const appRoutes: Routes = [
     {
         path: 'login',
         component: LoginComponent
+    },
+    {
+        path: 'profile',
+        component: ProfileComponent
     },
     {
         path: '**',
