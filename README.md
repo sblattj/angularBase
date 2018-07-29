@@ -1,4 +1,6 @@
-# angularBase (MEAN Stack - MongoDB/ExpressJS/Angular 2/Node.js)
+# angularBase
+
+## (MEAN Stack - MongoDB/ExpressJS/Angular 2/Node.js)
 
 This template can serve as a basis for any website you want to create.
 
